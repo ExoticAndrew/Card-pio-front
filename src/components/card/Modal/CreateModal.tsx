@@ -32,7 +32,7 @@ const Input = ({ label, value, updateValue, type = "text", step }: InputProps) =
 
 export function CreateModal({ closeModal }: ModalProps) {
   const [title, setTitle] = useState("");
-  const [price, setPrice] = useState(""); // agora é string
+  const [price, setPrice] = useState(""); 
   const [image, setImage] = useState("");
 
   const { mutate, isSuccess, isPending } = useFoodDataMutate();
@@ -42,7 +42,7 @@ export function CreateModal({ closeModal }: ModalProps) {
 
     const foodData: FoodData = {
       title,
-      price: Number(price.replace(",", ".")), // converte para número aqui
+      price: Number(price.replace(",", ".")), 
       image,
     };
 
@@ -69,7 +69,7 @@ export function CreateModal({ closeModal }: ModalProps) {
             value={price}
             type="number"
             step="0.01"
-            updateValue={setPrice} // só atualiza string, sem converter
+            updateValue={setPrice} 
           />
           <Input label="Imagem" value={image} updateValue={setImage} />
 
