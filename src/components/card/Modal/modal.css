@@ -1,0 +1,84 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-body {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  z-index: 10000;
+  font-family: 'Lora', serif; 
+}
+
+.modal-body h1 {
+  text-align: center;
+  font-size: 3rem; 
+  margin-bottom: 16px;
+  color: #6B4226; 
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-container label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.input-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: #0275d8;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #025cb3;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #333;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: -12px;
+}
